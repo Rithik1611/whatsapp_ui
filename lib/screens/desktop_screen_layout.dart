@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_ui/contact_list.dart';
+import 'package:whatsapp_ui/web_profile_bar.dart';
 
 class DesktopScreenLayout extends StatelessWidget {
   const DesktopScreenLayout({super.key});
@@ -13,7 +14,7 @@ class DesktopScreenLayout extends StatelessWidget {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  //title bar
+                  WebProfileBar(),
                   //search bar
                   ContactList()
                 ],
