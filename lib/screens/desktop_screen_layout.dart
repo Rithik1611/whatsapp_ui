@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_ui/contact_list.dart';
+import 'package:whatsapp_ui/screens/web_chatappbar.dart';
 import 'package:whatsapp_ui/web_profile_bar.dart';
+import 'package:whatsapp_ui/web_searchbar.dart';
 
 class DesktopScreenLayout extends StatelessWidget {
   const DesktopScreenLayout({super.key});
@@ -13,11 +15,7 @@ class DesktopScreenLayout extends StatelessWidget {
           const Expanded(
             child: SingleChildScrollView(
               child: Column(
-                children: [
-                  WebProfileBar(),
-                  //search bar
-                  ContactList()
-                ],
+                children: [WebProfileBar(), WebSearchbar(), ContactList()],
               ),
             ),
           ),
@@ -27,6 +25,13 @@ class DesktopScreenLayout extends StatelessWidget {
                 image: DecorationImage(
                     image: AssetImage('assets/backgroundImage.png'),
                     fit: BoxFit.cover)),
+            child: const Column(
+              children: [
+                WebChatappbar(),
+                //chat sreen
+                //chat message box
+              ],
+            ),
           ),
         ],
       ),
