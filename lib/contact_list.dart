@@ -31,6 +31,7 @@ class ContactList extends StatelessWidget {
                       ),
                     ),
                     leading: CircleAvatar(
+                      radius: 30,
                       backgroundImage:
                           NetworkImage(info[index]["profilePic"].toString()),
                     ),
