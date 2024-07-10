@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_ui/chat_list.dart';
+import 'package:whatsapp_ui/chat_messagebox.dart';
 import 'package:whatsapp_ui/contact_list.dart';
 import 'package:whatsapp_ui/screens/web_chatappbar.dart';
 import 'package:whatsapp_ui/web_profile_bar.dart';
@@ -28,8 +30,8 @@ class DesktopScreenLayout extends StatelessWidget {
             child: const Column(
               children: [
                 WebChatappbar(),
-                //chat sreen
-                //chat message box
+                Expanded(child: ChatList()),
+                ChatMessagebox(),
               ],
             ),
           ),

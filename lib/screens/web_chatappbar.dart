@@ -37,6 +37,7 @@ class WebChatappbar extends StatelessWidget {
                 Icons.search,
                 color: Colors.grey,
               ),
+              SizedBox(width: 14),
               Icon(
                 Icons.more_vert,
                 color: Colors.grey,
